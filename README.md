@@ -1,1 +1,1 @@
-# Marketable - An E-Commerce store for the common man
+# Marketable - A Simple E-commerce store
