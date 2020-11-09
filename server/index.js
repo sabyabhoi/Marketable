@@ -4,6 +4,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 
 const middlewares = require("./middlewares");
+const mobiles = require("./routes/Mobile");
 
 require("dotenv").config();
 
@@ -13,6 +14,8 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan("tiny"));
 app.use(express.json());
+
+app.use("/mobiles", mobiles);
 
 app.get("/", (req, res) => {
   res.json({ message: "Marketable" });
