@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+
+import MkNavbar from "./components/MkNavbar";
 
 const App = () => {
-  return <div className="App">Hello there</div>;
+  return (
+    <div className="App">
+      <MkNavbar />
+    </div>
+  );
 };
 
 export default App;
